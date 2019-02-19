@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android Xiaomi Mobile Suite" parallel="classes" thread-count="2">
+    <test name="AndroidTests">
+        <parameter name="OSName" value="Android" />
+        <parameter name="deviceName" value="359358490904"/>
+        <!-- <parameter name="deviceName" value="5200e59dec8fb4c7"/> -->
+        <parameter name="platformVersion" value="8.1.0"/>
+        <parameter name="deviceType" value="Mobile"/> <!-- Tablet or Mobile-->
+        <classes>
+            <class name="TestCase"/>
+        </classes>
+    </test> <!-- AndroidTests -->
+</suite> <!-- Default Suite -->
